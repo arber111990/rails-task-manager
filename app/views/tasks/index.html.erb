@@ -1,7 +1,7 @@
 <!-- app/views/restaurants/index.html.erb -->
 <% @tasks.each do |task| %>
   <h2><%=link_to task.title, task_path(task) %>
-    <%= link_to "press here to delete", task_path(task), method: :delete %>
+    <%= link_to "press here to delete", delete_path(task), method: :delete %>
   </h2>
 <% end %>
 
